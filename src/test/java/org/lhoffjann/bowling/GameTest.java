@@ -27,4 +27,9 @@ class GameTest {
         assertEquals(game.getScore(), 12);
     }
 
+    @Test
+    void rollAStrikeAndTwoThreesAndRestZeros(){
+        game.roll(10, 3,3, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0);
+        assertEquals(game.getScore(), 22);
+    }
 }
