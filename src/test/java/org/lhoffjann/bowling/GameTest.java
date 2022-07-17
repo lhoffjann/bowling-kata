@@ -40,7 +40,7 @@ class GameTest {
     @Test
     void rollASpareAndAOneAndRestZerosOnLastFrame(){
         game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 3,7,1);
-        assertEquals(game.getScore(), 12);
+        assertEquals(game.getScore(), 11);
     }
     @Test
     void lastFrameAllStrikes(){
