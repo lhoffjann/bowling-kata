@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="implemented test for strike">
+    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="corrected edge cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Roll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Roll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,8 @@
       <option name="presentableId" value="Default" />
       <updated>1657979510546</updated>
       <workItem from="1657979512486" duration="15853000" />
-      <workItem from="1658068495961" duration="11546000" />
+      <workItem from="1658068495961" duration="12776000" />
+      <workItem from="1658082686703" duration="2379000" />
     </task>
     <task id="LOCAL-00001" summary="initialized the project">
       <created>1657980648216</created>
@@ -211,7 +211,35 @@
       <option name="project" value="LOCAL" />
       <updated>1658076719183</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="implemented strike">
+      <created>1658081114797</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658081114797</updated>
+    </task>
+    <task id="LOCAL-00015" summary="implemented test for perfect game">
+      <created>1658081337049</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658081337049</updated>
+    </task>
+    <task id="LOCAL-00016" summary="implemented edge cases">
+      <created>1658081927542</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658081927542</updated>
+    </task>
+    <task id="LOCAL-00017" summary="corrected edge cases">
+      <created>1658083198913</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658083198913</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +273,11 @@
     <MESSAGE value="refactored code to include Frames" />
     <MESSAGE value="implemented spare" />
     <MESSAGE value="implemented test for strike" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented test for strike" />
+    <MESSAGE value="implemented strike" />
+    <MESSAGE value="implemented test for perfect game" />
+    <MESSAGE value="implemented edge cases" />
+    <MESSAGE value="corrected edge cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected edge cases" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

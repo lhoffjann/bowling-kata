@@ -13,11 +13,15 @@ public class Game {
         int numberOfFrames = 10;
         int cursor = 0;
         for(int i = 0; i < numberOfFrames; i++) {
-           Frame frame = new Frame();
-           if (PinsDown[cursor] == 10){
-               frame.roll(PinsDown[cursor]);
-               cursor += 1;
-           } else {
+            Frame frame = new Frame();
+            if (i == numberOfFrames-1 & cursor == PinsDown.length - 3) {
+                frame.roll(PinsDown[cursor]);
+                frame.roll(PinsDown[cursor+ 1]);
+                frame.roll(PinsDown[cursor+ 2]);
+            } else if (PinsDown[cursor] == 10) {
+                frame.roll(PinsDown[cursor]);
+                cursor += 1;
+            } else {
                frame.roll(PinsDown[cursor]);
                frame.roll(PinsDown[cursor+1]);
                cursor += 2;
@@ -34,15 +38,17 @@ public class Game {
 
         for (int i = 0; i < frames.size(); i++) {
             currentFrame = frames.get(i);
-
-            if (i < frames.size()-1){
+            if (i < frames.size() - 1){
                 nextFrame = frames.get(i+1);
             }
             if(i < frames.size() - 2){
-                nextNextFrame = frames.get(i+2);
+                nextNextFrame = frames.get(i + 2);
             }
-
-            if (currentFrame.isStrike() & nextFrame.isStrike()){
+            if(i == frames.size() - 1) {
+                score += currentFrame.getScore();
+            }else if(i == frames.size() - 2 & currentFrame.isStrike()){
+                score += currentFrame.getScore() + nextFrame.getScoreOfRoll(0) + nextFrame.getScoreOfRoll(1);
+            } else if (currentFrame.isStrike() & nextFrame.isStrike()){
                 score += currentFrame.getScore() + nextFrame.getScore() + nextNextFrame.getScoreOfRoll(0);
             } else if (currentFrame.isStrike()) {
                 score += currentFrame.getScore() + nextFrame.getScore();

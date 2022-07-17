@@ -47,5 +47,10 @@ class GameTest {
         game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10,10,10);
         assertEquals(game.getScore(), 30);
     }
+    @Test
+    void SecondLastIsStrikeAndLastFrameAllStrikes(){
+        game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10, 10,10,10);
+        assertEquals(game.getScore(), 60);
+    }
 
 }
