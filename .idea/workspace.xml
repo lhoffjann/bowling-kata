@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="implemented Rolls">
+    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="refactored code to include Frames">
+      <change afterPath="$PROJECT_DIR$/.attach_pid10336" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid10576" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid10690" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid10774" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid7438" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid8633" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid9223" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/FinalFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/FinalFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Roll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Roll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/RollTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/RollTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657979510546</updated>
       <workItem from="1657979512486" duration="15853000" />
-      <workItem from="1658068495961" duration="3079000" />
+      <workItem from="1658068495961" duration="7783000" />
     </task>
     <task id="LOCAL-00001" summary="initialized the project">
       <created>1657980648216</created>
@@ -193,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658060032909</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="implemented test for spare">
+      <created>1658071692106</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658071692106</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +233,9 @@
     <MESSAGE value="writing first tests" />
     <MESSAGE value="implemented first failing test" />
     <MESSAGE value="implemented Rolls" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented Rolls" />
+    <MESSAGE value="implemented test for spare" />
+    <MESSAGE value="refactored code to include Frames" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored code to include Frames" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
