@@ -1,14 +1,21 @@
 package org.lhoffjann.bowling;
-
+import java.util.ArrayList;
 public class Frame {
-    public Roll[] rollsOfFrame;
+    public ArrayList<Roll> rollsOfFrame;
     public int score;
     public boolean isDuplicated;
 
     public Frame(){
-        rollsOfFrame = new Roll[2];
-        rollsOfFrame[0] = new Roll();
-        rollsOfFrame[1] = new Roll();
+        this.rollsOfFrame = new ArrayList<Roll>();
+    }
+    public void makeARoll(int score){
+     if (this.rollsOfFrame.isEmpty()){
+         rollsOfFrame.add(new Roll(score));
+     } else if (!this.rollsOfFrame.isEmpty()) {
+         if(this.rollsOfFrame.size() == 1){
+             rollsOfFrame.add(new Roll(1));
+         }
+     }
     }
 
 }

@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="added subclass of Frame and defined the frame creation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" afterDir="false" />
+    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="implemented Rolls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/FinalFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/FinalFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RollTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RollTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Roll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Roll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/RollTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/RollTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "/home/lennart/IdeaProjects/bowling-kata/src/main/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/lennart/IdeaProjects/bowling-kata/src/test/java/org/lhoffjann/bowling&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -86,9 +88,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RollTest.setScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lhoffjann.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lhoffjann.bowling" />
+      <option name="MAIN_CLASS_NAME" value="org.lhoffjann.bowling.RollTest" />
+      <option name="METHOD_NAME" value="setScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.RollTest.setScore" />
         <item itemvalue="JUnit.RollTest" />
       </list>
     </recent_temporary>
@@ -101,7 +120,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657979510546</updated>
-      <workItem from="1657979512486" duration="12152000" />
+      <workItem from="1657979512486" duration="15853000" />
+      <workItem from="1658068495961" duration="3079000" />
     </task>
     <task id="LOCAL-00001" summary="initialized the project">
       <created>1657980648216</created>
@@ -166,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658054846452</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="writing first tests">
+      <created>1658060032909</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658060032909</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +220,10 @@
     <MESSAGE value="created package and moved all files there" />
     <MESSAGE value="defined the relation between classes" />
     <MESSAGE value="added subclass of Frame and defined the frame creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added subclass of Frame and defined the frame creation" />
+    <MESSAGE value="writing first tests" />
+    <MESSAGE value="implemented first failing test" />
+    <MESSAGE value="implemented Rolls" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Rolls" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
