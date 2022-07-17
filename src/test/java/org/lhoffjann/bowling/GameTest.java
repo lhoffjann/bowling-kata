@@ -37,5 +37,15 @@ class GameTest {
         game.roll(10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10);
         assertEquals(game.getScore(), 300);
     }
+    @Test
+    void rollASpareAndAOneAndRestZerosOnLastFrame(){
+        game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 3,7,1);
+        assertEquals(game.getScore(), 12);
+    }
+    @Test
+    void lastFrameAllStrikes(){
+        game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10,10,10);
+        assertEquals(game.getScore(), 30);
+    }
 
 }
