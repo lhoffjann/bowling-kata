@@ -1,3 +1,4 @@
+package org.lhoffjann.bowling;
 public class Roll {
     public int score;
 
