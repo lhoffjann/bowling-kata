@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="defined the relation between classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/FinalFrame.java" afterDir="false" />
+    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="added subclass of Frame and defined the frame creation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/FinalFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/FinalFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RollTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RollTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -54,10 +57,26 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.lhoffjann.bowling" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GameTest">
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lhoffjann.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lhoffjann.bowling" />
+      <option name="MAIN_CLASS_NAME" value="org.lhoffjann.bowling.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling-kata" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.RollTest" />
       </list>
     </recent_temporary>
@@ -81,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657979510546</updated>
-      <workItem from="1657979512486" duration="7728000" />
+      <workItem from="1657979512486" duration="12152000" />
     </task>
     <task id="LOCAL-00001" summary="initialized the project">
       <created>1657980648216</created>
@@ -139,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658053998680</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added subclass of Frame and defined the frame creation">
+      <created>1658054846452</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658054846452</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +192,8 @@
     <MESSAGE value="&#10;added uiDesigner" />
     <MESSAGE value="created package and moved all files there" />
     <MESSAGE value="defined the relation between classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="defined the relation between classes" />
+    <MESSAGE value="added subclass of Frame and defined the frame creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added subclass of Frame and defined the frame creation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
