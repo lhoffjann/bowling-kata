@@ -1,40 +1,28 @@
 package org.lhoffjann.bowling;
 
 import java.util.ArrayList;
+
 public class Frame {
     public ArrayList<Roll> rolls;
 
     public Frame() {
-        this.rolls = new ArrayList<Roll>();
+        this.rolls = new ArrayList<>();
     }
 
-    public int getScoreOfRoll(int roll){
-        return rolls.get(roll).getScore();
-    }
+    public int getScoreOfRoll(int roll) { return rolls.get(roll).score(); }
+
     public void roll(int PinsDown){
         this.rolls.add(new Roll(PinsDown));
     }
-    public int getScore(){
+
+    public int getScore() {
         int scoreOfThisFrame = 0;
-        for(int i = 0; i < this.rolls.size(); i ++){
-            scoreOfThisFrame += this.rolls.get(i).getScore();
+        for(Roll roll : this.rolls){
+            scoreOfThisFrame += roll.score();
         }
         return scoreOfThisFrame;
     }
 
-    public boolean isStrike(){
-        if (rolls.get(0).getScore() == 10) {
-            return true;
-
-        }else {
-            return false;
-        }
+    public boolean isStrike() { return rolls.get(0).score() == 10; }
+    public boolean isSpare() { return this.getScore() == 10 && !this.isStrike(); }
     }
-    public boolean isSpare(){
-        if (this.getScore() == 10 & !this.isStrike()){
-            return true;
-        }else {
-            return false;
-        }
-    }
-}
