@@ -48,9 +48,20 @@ class GameTest {
         assertEquals(game.getScore(), 30);
     }
     @Test
-    void SecondLastIsStrikeAndLastFrameAllStrikes(){
+    void secondLastIsStrikeAndLastFrameAllStrikes(){
         game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10, 10,10,10);
         assertEquals(game.getScore(), 60);
+    }
+    @Test
+    void tenPairsOfNineAndMiss() {
+        game.roll(9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0);
+        assertEquals(game.getScore(), 90);
+    }
+
+    @Test
+    void tenPairsOfFiveAndSpareWithFinalFive() {
+        game.roll(5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5);
+        assertEquals(game.getScore(), 150);
     }
 
 }

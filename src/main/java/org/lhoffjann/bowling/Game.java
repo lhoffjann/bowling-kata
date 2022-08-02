@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 public class Game {
     public ArrayList<Frame> frames;
-
+    public final int numberOfFrames;
     public Game() {
-        this.frames = new ArrayList<Frame>();
+        this.frames = new ArrayList<>();
+        this.numberOfFrames = 10;
     }
 
     public void roll(int... PinsDown) {
@@ -42,39 +43,42 @@ public class Game {
         for (int i = 0; i < frames.size(); i++) {
             currentFrame = frames.get(i);
             // setting nextFrame and making sure it isnt outofRange
-            if (i < frames.size() - 1){
+            if (i < numberOfFrames - 1){
                 nextFrame = frames.get(i + 1);
             }
             // setting nextnextFrame and making sure it isnt outofRange
-            if(i < frames.size() - 2){
-
+            if(i < numberOfFrames - 2){
                 nextNextFrame = frames.get(i + 2);
             }
-            // adding last throw to the score
-            if(i == frames.size() - 1) {
 
-                score += currentFrame.getScore();
-
-            // Edgecase of the frame before last frame is a strike
-            }else if(i == frames.size() - 2 & currentFrame.isStrike()){
-
-                score += currentFrame.getScore() + nextFrame.getScoreOfRoll(0) + nextFrame.getScoreOfRoll(1);
-            } else if (currentFrame.isStrike() & nextFrame.isStrike()){
-
-                score += currentFrame.getScore() + nextFrame.getScore() + nextNextFrame.getScoreOfRoll(0);
-
-            } else if (currentFrame.isStrike()) {
-
-                score += currentFrame.getScore() + nextFrame.getScore();
-
-            } else if (currentFrame.isSpare()){
-                score += currentFrame.getScore() + nextFrame.getScoreOfRoll(0);
-            // normal frame
-            }else {
-                score += currentFrame.getScore();
-            }
+            score += calculateScoreOfSingleFrame(i, currentFrame,nextFrame,nextNextFrame);
         }
         return score;
+
+}
+    public int calculateScoreOfSingleFrame(int postionOfFrame, Frame currentFrame, Frame nextFrame, Frame nextNextFrame){
+
+        if(postionOfFrame == numberOfFrames - 1) {
+            return currentFrame.getScore();
+
+            // Edgecase of the frame before last frame is a strike
+        }else if(postionOfFrame == numberOfFrames- 2 & currentFrame.isStrike()){
+            return currentFrame.getScore() + nextFrame.getScoreOfRoll(0) + nextFrame.getScoreOfRoll(1);
+
+        } else if (currentFrame.isStrike() & nextFrame.isStrike()){
+            return currentFrame.getScore() + nextFrame.getScore() + nextNextFrame.getScoreOfRoll(0);
+
+        } else if (currentFrame.isStrike()) {
+            return currentFrame.getScore() + nextFrame.getScore();
+
+        } else if (currentFrame.isSpare()){
+            return currentFrame.getScore() + nextFrame.getScoreOfRoll(0);
+
+            // normal frame
+        }else {
+            return currentFrame.getScore();
+        }
     }
 }
+
 

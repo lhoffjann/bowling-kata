@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="corrected edge cases">
+    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="added to test from task description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" afterDir="false" />
@@ -44,6 +44,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;last_directory_selection&quot;: &quot;/home/lennart/IdeaProjects/bowling-kata/src/test/java/org/lhoffjann/bowling&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lennart/.config/Screeps/scripts/screeps.com&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -75,11 +76,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.secondLastIsStrikeAndLastFrameAllStrikes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling-kata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RollTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lhoffjann.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lhoffjann.bowling" />
+      <option name="MAIN_CLASS_NAME" value="org.lhoffjann.bowling.GameTest" />
+      <option name="METHOD_NAME" value="secondLastIsStrikeAndLastFrameAllStrikes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.tenPairsOfFiveAndSpareWithFinalFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lhoffjann.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lhoffjann.bowling" />
+      <option name="MAIN_CLASS_NAME" value="org.lhoffjann.bowling.GameTest" />
+      <option name="METHOD_NAME" value="tenPairsOfFiveAndSpareWithFinalFive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.tenPairsOfNineAndMiss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-kata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lhoffjann.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lhoffjann.bowling" />
+      <option name="MAIN_CLASS_NAME" value="org.lhoffjann.bowling.GameTest" />
+      <option name="METHOD_NAME" value="tenPairsOfNineAndMiss" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,8 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.tenPairsOfFiveAndSpareWithFinalFive" />
+        <item itemvalue="JUnit.GameTest.tenPairsOfNineAndMiss" />
+        <item itemvalue="JUnit.GameTest.secondLastIsStrikeAndLastFrameAllStrikes" />
         <item itemvalue="JUnit.RollTest.setScore" />
-        <item itemvalue="JUnit.RollTest" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +160,11 @@
       <updated>1657979510546</updated>
       <workItem from="1657979512486" duration="15853000" />
       <workItem from="1658068495961" duration="12776000" />
-      <workItem from="1658082686703" duration="2379000" />
+      <workItem from="1658082686703" duration="5749000" />
+      <workItem from="1658767773907" duration="4893000" />
+      <workItem from="1659201622424" duration="1411000" />
+      <workItem from="1659356570412" duration="3557000" />
+      <workItem from="1659424139516" duration="655000" />
     </task>
     <task id="LOCAL-00001" summary="initialized the project">
       <created>1657980648216</created>
@@ -239,7 +285,42 @@
       <option name="project" value="LOCAL" />
       <updated>1658083198913</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="implemented solution for edge cases">
+      <created>1658085177753</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1658085177753</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refactored Roll">
+      <created>1659357040722</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1659357040722</updated>
+    </task>
+    <task id="LOCAL-00020" summary="refactored Frame">
+      <created>1659357183479</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659357183479</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refactored Frame">
+      <created>1659370249962</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1659370249962</updated>
+    </task>
+    <task id="LOCAL-00022" summary="refactored Game">
+      <created>1659370727789</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1659370727789</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +358,12 @@
     <MESSAGE value="implemented test for perfect game" />
     <MESSAGE value="implemented edge cases" />
     <MESSAGE value="corrected edge cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected edge cases" />
+    <MESSAGE value="implemented solution for edge cases" />
+    <MESSAGE value="refactored Roll" />
+    <MESSAGE value="refactored Frame" />
+    <MESSAGE value="refactored Game" />
+    <MESSAGE value="added to test from task description" />
+    <option name="LAST_COMMIT_MESSAGE" value="added to test from task description" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
