@@ -10,7 +10,7 @@ public class Game {
         this.numberOfFrames = 10;
     }
 
-    public void roll(int... PinsDown) {
+    public void addRoll(int... PinsDown) {
         int numberOfFrames = 10;
         int cursor = 0;
         for(int i = 0; i < numberOfFrames; i++) {

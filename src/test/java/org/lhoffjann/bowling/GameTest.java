@@ -13,54 +13,54 @@ class GameTest {
     }
     @Test
     void rollOnlyZeros(){
-        game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0);
+        game.addRoll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0);
         assertEquals(game.getScore(), 0);
     }
     @Test
     void rollOnlyOnes(){
-        game.roll(1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1);
+        game.addRoll(1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1, 1,1);
         assertEquals(game.getScore(), 20);
     }
     @Test
     void rollASpareAndAOneAndRestZeros(){
-        game.roll(7,3 , 1,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0);
+        game.addRoll(7,3 , 1,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0);
         assertEquals(game.getScore(), 12);
     }
 
     @Test
     void rollAStrikeAndTwoThreesAndRestZeros(){
-        game.roll(10, 3,3, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0);
+        game.addRoll(10, 3,3, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0);
         assertEquals(game.getScore(), 22);
     }
     @Test
     void perfectGame(){
-        game.roll(10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10);
+        game.addRoll(10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10);
         assertEquals(game.getScore(), 300);
     }
     @Test
     void rollASpareAndAOneAndRestZerosOnLastFrame(){
-        game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 3,7,1);
+        game.addRoll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 3,7,1);
         assertEquals(game.getScore(), 11);
     }
     @Test
     void lastFrameAllStrikes(){
-        game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10,10,10);
+        game.addRoll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10,10,10);
         assertEquals(game.getScore(), 30);
     }
     @Test
     void secondLastIsStrikeAndLastFrameAllStrikes(){
-        game.roll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10, 10,10,10);
+        game.addRoll(0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 0,0, 10, 10,10,10);
         assertEquals(game.getScore(), 60);
     }
     @Test
     void tenPairsOfNineAndMiss() {
-        game.roll(9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0);
+        game.addRoll(9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0, 9, 0);
         assertEquals(game.getScore(), 90);
     }
 
     @Test
     void tenPairsOfFiveAndSpareWithFinalFive() {
-        game.roll(5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5);
+        game.addRoll(5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5);
         assertEquals(game.getScore(), 150);
     }
 

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="added to test from task description">
+    <list default="true" id="6edd50e5-1a08-4aca-a8fb-2a84c62198ae" name="Changes" comment="deleted unused files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lhoffjann/bowling/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lhoffjann/bowling/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +162,7 @@
       <workItem from="1658767773907" duration="4893000" />
       <workItem from="1659201622424" duration="1411000" />
       <workItem from="1659356570412" duration="3557000" />
-      <workItem from="1659424139516" duration="655000" />
+      <workItem from="1659424139516" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="initialized the project">
       <created>1657980648216</created>
@@ -320,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659370727789</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added function to calculate Score of individual Frames">
+      <created>1659425000013</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1659425000013</updated>
+    </task>
+    <task id="LOCAL-00024" summary="deleted unused files">
+      <created>1659425023981</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659425023981</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,8 +350,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initialized the project" />
-    <MESSAGE value="added junit as dependency" />
     <MESSAGE value="created files for the needed classes" />
     <MESSAGE value="created the score method" />
     <MESSAGE value="changed the junit dependencies" />
@@ -363,7 +373,9 @@
     <MESSAGE value="refactored Frame" />
     <MESSAGE value="refactored Game" />
     <MESSAGE value="added to test from task description" />
-    <option name="LAST_COMMIT_MESSAGE" value="added to test from task description" />
+    <MESSAGE value="added function to calculate Score of individual Frames" />
+    <MESSAGE value="deleted unused files" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted unused files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
